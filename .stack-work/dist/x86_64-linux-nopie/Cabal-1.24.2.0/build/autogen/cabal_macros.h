@@ -14,6 +14,13 @@
   (major1) == 4 && (major2) <  9 || \
   (major1) == 4 && (major2) == 9 && (minor) <= 1)
 
+/* package encoding-io-0.0.1 */
+#define VERSION_encoding_io "0.0.1"
+#define MIN_VERSION_encoding_io(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  0 || \
+  (major1) == 0 && (major2) == 0 && (minor) <= 1)
+
 /* package gtk3-0.14.6 */
 #define VERSION_gtk3 "0.14.6"
 #define MIN_VERSION_gtk3(major1,major2,minor) (\
@@ -27,13 +34,6 @@
   (major1) <  1 || \
   (major1) == 1 && (major2) <  1 || \
   (major1) == 1 && (major2) == 1 && (minor) <= 0)
-
-/* package text-1.2.2.2 */
-#define VERSION_text "1.2.2.2"
-#define MIN_VERSION_text(major1,major2,minor) (\
-  (major1) <  1 || \
-  (major1) == 1 && (major2) <  2 || \
-  (major1) == 1 && (major2) == 2 && (minor) <= 2)
 
 /* tool alex-3.2.1 */
 #define TOOL_VERSION_alex "3.2.1"

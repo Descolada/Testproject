@@ -27,7 +27,7 @@ executable Complimentor-exe
                      , Complimentor
                      , gtk3
                      , random
-                     , text
+                     , encoding-io
   default-language:    Haskell2010
 
 test-suite Complimentor-test
