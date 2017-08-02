@@ -5,16 +5,17 @@ module Main where
 import           Control.Applicative
 import           Control.Exception
 import qualified Data.Text           as T
+import           Data.Text.IO
 import           "gtk3" Graphics.UI.Gtk
 import           System.Exit
 import           System.IO
 import           System.Random
 
 fileContents :: IO [String]
-fileContents = do   comps <- try $ readFile "src/compliments.txt" :: IO (Either IOException String)
+fileContents = do   comps <- try $ Data.Text.IO.readFile "src/compliments.txt" :: IO (Either IOException T.Text)
                     case comps of
                         Left except    -> exitFailure
-                        Right contents -> return $ lines contents
+                        Right contents -> return $ map T.unpack $ T.lines contents
 
 roll :: Int -> IO Int
 roll n = getStdRandom (randomR (0,n-1))
