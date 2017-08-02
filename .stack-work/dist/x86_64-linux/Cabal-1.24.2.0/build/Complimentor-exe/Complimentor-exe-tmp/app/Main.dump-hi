@@ -1,0 +1,424 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-01 19:44:20.628446149 UTC
+
+interface main@main:Main 8002
+  interface hash: 995a8e0e07dae8542d13a18b544f4c77
+  ABI hash: 5ef59789854861c919e208e525bcf141
+  export-list hash: 1925d63676c7e8e38125f36fb1118664
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 203ab9d9a121db3ba06f0d035191f195
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.complimentor
+  Main.fileContents
+  Main.main
+  Main.roll
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      filepath-1.4.1.1@filepath-1.4.1.1 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      time-1.6.0.1@time-1.6.0.1 unix-2.7.2.1@unix-2.7.2.1
+                      wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz
+                      wxcore-0.92.3.0@wxcore-0.92.3.0-7crw4DOSyVYLnCcwhdBKS4
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX.Controls
+         wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX.Dialogs
+         wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX.Draw
+         wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX.Media
+         wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX.Menu
+         wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX.Timer
+         wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX.TopLevelWindow
+         wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX.Variable
+         wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX.Window
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
+import  -/  base-4.9.1.0:Control.Exception a76dd9666251322fe34dbcca3a0817bf
+import  -/  base-4.9.1.0:Control.Exception.Base 1e106916283856f4d9caeddab92cd861
+import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.IO.Exception 5064be4c355632a1d1c4f2322f56ac52
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.Exit 068ba078eb20417d7af66db8b8ab4db1
+import  -/  base-4.9.1.0:System.IO e4a64a8e3dce8616da54f0ee7104f7db
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog:System.Random 586320b03bf566a35255443e8bc5acf7
+import  -/  wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX caf00e654121f6b77fbc928c7c797fb9
+import  -/  wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX.Attributes f2e729fe6b66704877f3b1183a6f346b
+import  -/  wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX.Classes a7321a4073b2f6d4604f4750da5caa56
+import  -/  wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX.Controls 95ab135a53fcbdf17543bd6a5ec29819
+import  -/  wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX.Events dd7bddb9931306c60b0a6122baf87af8
+import  -/  wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX.Frame fedfe1b53b87a8a8afd3262bbea63fdb
+import  -/  wx-0.92.3.0@wx-0.92.3.0-KU6FNMOQFkT1dV0AXT55hz:Graphics.UI.WX.Layout 155b606047d018d49f14bf002c61fe72
+import  -/  wxcore-0.92.3.0@wxcore-0.92.3.0-7crw4DOSyVYLnCcwhdBKS4:Graphics.UI.WXCore.Layout 12a5f5b0fd742a112b4ce3f8d327f98a
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+677ff6f5c6e3c9d27d87fddc3cdbc8b2
+  complimentor :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.complimentor1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+23227e617c473756a4c834b0f5433a52
+  complimentor1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Main.complimentor5
+                        `cast`
+                      (GHC.Types.N:IO[0] <Graphics.UI.WXCore.WxcClassTypes.Frame ()>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 Main.complimentor2 ipv1 ipv }) -}
+ac779a453dcaac2a2f5a796609a86a25
+  complimentor2 ::
+    Graphics.UI.WXCore.WxcClassTypes.Frame ()
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (f :: Graphics.UI.WXCore.WxcClassTypes.Frame ())
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case (Graphics.UI.WX.Controls.buttonEx
+                         @ (Graphics.UI.WXCore.WxcClassTypes.CTopLevelWindow
+                              (Graphics.UI.WXCore.WxcClassTypes.CFrame ()))
+                         f
+                         Graphics.UI.WX.Controls.$fSelectionObject17
+                         (GHC.Types.:
+                            @ (Graphics.UI.WX.Attributes.Prop
+                                 (Graphics.UI.WXCore.WxcClassTypes.Button ()))
+                            Main.complimentor3
+                            (GHC.Types.:
+                               @ (Graphics.UI.WX.Attributes.Prop
+                                    (Graphics.UI.WXCore.WxcClassTypes.Button ()))
+                               (Graphics.UI.WX.Attributes.:=
+                                  @ (Graphics.UI.WXCore.WxcClassTypes.Button ())
+                                  @ (GHC.Types.IO ())
+                                  (Graphics.UI.WX.Controls.$fCommandingObject18 @ ())
+                                  (Graphics.UI.WX.TopLevelWindow.$fCloseableObject1 @ () f)
+                                    `cast`
+                                  (Sym (GHC.Types.N:IO[0] <()>_R)))
+                               (GHC.Types.[]
+                                  @ (Graphics.UI.WX.Attributes.Prop
+                                       (Graphics.UI.WXCore.WxcClassTypes.Button ()))))))
+                        `cast`
+                      (GHC.Types.N:IO[0] <Graphics.UI.WXCore.WxcClassTypes.Button ()>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 Graphics.UI.WX.Attributes.set1
+                   @ (Graphics.UI.WXCore.WxcClassTypes.Frame ())
+                   f
+                   (GHC.Types.:
+                      @ (Graphics.UI.WX.Attributes.Prop
+                           (Graphics.UI.WXCore.WxcClassTypes.Frame ()))
+                      (Graphics.UI.WX.Attributes.:=
+                         @ (Graphics.UI.WXCore.WxcClassTypes.Frame ())
+                         @ Graphics.UI.WXCore.Layout.Layout
+                         (Graphics.UI.WX.TopLevelWindow.$fFormObject_$clayout @ ())
+                         (Graphics.UI.WXCore.Layout.layoutFromWindow
+                            @ (Graphics.UI.WXCore.WxcClassTypes.CControl
+                                 (Graphics.UI.WXCore.WxcClassTypes.CButton ()))
+                            ipv1))
+                      (GHC.Types.[]
+                         @ (Graphics.UI.WX.Attributes.Prop
+                              (Graphics.UI.WXCore.WxcClassTypes.Frame ()))))
+                   ipv }) -}
+f59ce2fc3a7eff953044938d9256f830
+  complimentor3 ::
+    Graphics.UI.WX.Attributes.Prop
+      (Graphics.UI.WXCore.WxcClassTypes.Button ())
+  {- Unfolding: (Graphics.UI.WX.Attributes.:=
+                   @ (Graphics.UI.WXCore.WxcClassTypes.Button ())
+                   @ GHC.Base.String
+                   (Graphics.UI.WX.Window.$fTextualObject_$ctext
+                      @ (Graphics.UI.WXCore.WxcClassTypes.CControl
+                           (Graphics.UI.WXCore.WxcClassTypes.CButton ())))
+                   Main.complimentor4) -}
+570ca90be04fe03ed5494798e1f62254
+  complimentor4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Quit"#) -}
+46f348716ad9cfd6e9aefa57062b161c
+  complimentor5 ::
+    GHC.Types.IO (Graphics.UI.WXCore.WxcClassTypes.Frame ())
+  {- Unfolding: (Graphics.UI.WX.Frame.frameEx
+                   @ GHC.Prim.Any
+                   Graphics.UI.WXCore.Frame.frameDefaultStyle
+                   Main.complimentor6
+                   (Graphics.UI.WXCore.WxcObject.objectNull
+                      @ (Graphics.UI.WXCore.WxcClassTypes.CWxObject
+                           (Graphics.UI.WXCore.WxcClassTypes.CEvtHandler
+                              (Graphics.UI.WXCore.WxcClassTypes.CWindow GHC.Prim.Any))))) -}
+78425648310807c45d9837b703991a21
+  complimentor6 ::
+    [Graphics.UI.WX.Attributes.Prop
+       (Graphics.UI.WXCore.WxcClassTypes.Frame ())]
+  {- Unfolding: (GHC.Types.:
+                   @ (Graphics.UI.WX.Attributes.Prop
+                        (Graphics.UI.WXCore.WxcClassTypes.Frame ()))
+                   Main.complimentor7
+                   (GHC.Types.[]
+                      @ (Graphics.UI.WX.Attributes.Prop
+                           (Graphics.UI.WXCore.WxcClassTypes.Frame ())))) -}
+5a6d7f14c78cf6039b1bfe5b0c5a14cd
+  complimentor7 ::
+    Graphics.UI.WX.Attributes.Prop
+      (Graphics.UI.WXCore.WxcClassTypes.Frame ())
+  {- Unfolding: (Graphics.UI.WX.Attributes.:=
+                   @ (Graphics.UI.WXCore.WxcClassTypes.Frame ())
+                   @ GHC.Base.String
+                   (Graphics.UI.WX.Window.$fTextualObject_$ctext
+                      @ (Graphics.UI.WXCore.WxcClassTypes.CTopLevelWindow
+                           (Graphics.UI.WXCore.WxcClassTypes.CFrame ())))
+                   Main.complimentor8) -}
+5d96d22ac8abf710868d71747b891f78
+  complimentor8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Hello!"#) -}
+2bb2a34832749cac8e58bcdc7d15c02a
+  fileContents :: GHC.Types.IO [GHC.Base.String]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.fileContents1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <[GHC.Base.String]>_R)) -}
+51352940f1fc4d15820344f7165d9285
+  fileContents1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Base.String] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.catch#
+                        @ (Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String)
+                        @ GHC.Exception.SomeException
+                        Main.fileContents4
+                          `cast`
+                        (GHC.Types.N:IO[0]
+                             <Data.Either.Either
+                                GHC.IO.Exception.IOException GHC.Base.String>_R)
+                        Main.fileContents3
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   Data.Either.Left except
+                   -> case GHC.IO.Handle.Text.hPutStr2
+                             GHC.IO.Handle.FD.stdout
+                             Main.fileContents2
+                             GHC.Types.True
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      System.Exit.die2 @ [GHC.Base.String] ipv2 }
+                   Data.Either.Right contents
+                   -> (# ipv, Data.OldList.lines contents #) } }) -}
+f943d7216fbd6dd49aeabb93ba2e0a5c
+  fileContents2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "The compliments file was not found. Please install compliments.txt"#) -}
+68d235d7495b621ee65f1cae31e04e62
+  fileContents3 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ (Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String)
+                        wild
+                        eta1
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ (Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String)
+                             wild
+                             eta1
+                        GHC.Types.True
+                        -> (# eta1,
+                              Data.Either.Left
+                                @ GHC.IO.Exception.IOException
+                                @ GHC.Base.String
+                                e2
+                                  `cast`
+                                (UnsafeCo representational e100 GHC.IO.Exception.IOException) #) } } } } }) -}
+34c80ea1559301611a99835f659e5329
+  fileContents4 ::
+    GHC.Types.IO
+      (Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String)
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO
+                        (Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String))
+                   Main.fileContents5
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0]
+                             <Data.Either.Either
+                                GHC.IO.Exception.IOException GHC.Base.String>_R))) -}
+46bd71e770972e97b5a5a40e3f64d130
+  fileContents5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.FD.openFile1
+                        Main.fileContents6
+                        GHC.IO.IOMode.ReadMode
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv1
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    Data.Either.Right
+                      @ GHC.IO.Exception.IOException
+                      @ GHC.Base.String
+                      ipv3 #) } }) -}
+0266027b809e7eae1e524e7c43cd39b0
+  fileContents6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "src/compliments.txt"#) -}
+9c49bd9e76cbd5c9b81e8af939324899
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+0cc3e0684cf4ee1630dcb73d293da290
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 case Graphics.UI.WXCore.Events.appOnInit1
+                        Main.main2 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall_GC base-4.9.1.0 performMajorGC GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld
+                                                                  -> (# GHC.Prim.State#
+                                                                          GHC.Prim.RealWorld #)}
+                        ipv of wild { Unit# ds2 ->
+                 case {__pkg_ccall_GC base-4.9.1.0 performMajorGC GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld
+                                                                  -> (# GHC.Prim.State#
+                                                                          GHC.Prim.RealWorld #)}
+                        ds2 of wild1 { Unit# ds3 ->
+                 (# ds3, GHC.Tuple.() #) } } }) -}
+d50be098a44b664081bf4561935c1afb
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case {__pkg_ccall_GC wxcore-0.92.3.0@wxcore-0.92.3.0-7crw4DOSyVYLnCcwhdBKS4 ELJApp_InitAllImageHandlers GHC.Prim.State#
+                                                                                                                           GHC.Prim.RealWorld
+                                                                                                                         -> (# GHC.Prim.State#
+                                                                                                                                 GHC.Prim.RealWorld #)}
+                        s of wild { Unit# ds1 ->
+                 case Main.complimentor5
+                        `cast`
+                      (GHC.Types.N:IO[0] <Graphics.UI.WXCore.WxcClassTypes.Frame ()>_R)
+                        ds1 of ds2 { (#,#) ipv ipv1 ->
+                 case Main.complimentor2 ipv1 ipv of ds3 { (#,#) ipv2 ipv3 ->
+                 (# ipv2, GHC.Tuple.() #) } } }) -}
+1a3b9b8db3315a90c92b867019c51d64
+  main3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+adb1a34ad2b80320b1c65d64ae5d67ee
+  roll :: GHC.Types.Int -> GHC.Types.IO GHC.Types.Int
+  {- Arity: 2, Strictness: <L,1*U(U)><S,U>m,
+     Unfolding: InlineRule (0, True, True)
+                Main.roll1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Int>_R)) -}
+73c81173c5d667386fd70e34ab86b0ce
+  roll1 ::
+    GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Int #)
+  {- Arity: 2, Strictness: <L,1*U(U)><S,U>m,
+     Unfolding: (\ (n :: GHC.Types.Int)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case System.Random.theStdGen
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <System.Random.StdGen>_N) of wild { GHC.STRef.STRef r# ->
+                 let {
+                   w1 :: GHC.Integer.Type.Integer
+                   = case n of wild1 { GHC.Types.I# x ->
+                     GHC.Integer.Type.smallInteger (GHC.Prim.-# x 1#) }
+                 } in
+                 case GHC.Prim.atomicModifyMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ System.Random.StdGen
+                        @ (System.Random.StdGen, GHC.Types.Int)
+                        @ GHC.Types.Int
+                        r#
+                        (\ (a1 :: System.Random.StdGen) ->
+                         case System.Random.$wrandomIvalInteger
+                                @ System.Random.StdGen
+                                @ GHC.Types.Int
+                                System.Random.$fRandomGenStdGen
+                                GHC.Num.$fNumInt
+                                Main.roll_w2
+                                w1
+                                a1 of ww2 { (#,#) ww3 ww4 ->
+                         case ww4 of a'1 { System.Random.StdGen ipv ipv1 -> (a'1, ww3) } })
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of b1 { GHC.Types.I# ipv2 -> ds1 } } }) -}
+d8e9f8445e1963de637a14d171614cd1
+  roll_w2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

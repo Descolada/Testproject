@@ -1,8 +1,11 @@
+{-# LANGUAGE PackageImports #-}
+
 module Main where
 
 import           Control.Applicative
 import           Control.Exception
-import           Graphics.UI.Gtk
+import qualified Data.Text           as T
+import           "gtk3" Graphics.UI.Gtk
 import           System.Exit
 import           System.IO
 import           System.Random
@@ -10,7 +13,7 @@ import           System.Random
 fileContents :: IO [String]
 fileContents = do   comps <- try $ readFile "src/compliments.txt" :: IO (Either IOException String)
                     case comps of
-                        Left except    -> putStrLn "The compliments file was not found. Please install compliments.txt" >> exitFailure
+                        Left except    -> exitFailure
                         Right contents -> return $ lines contents
 
 roll :: Int -> IO Int
@@ -27,8 +30,6 @@ buttonPress _ l = do  getComp <- generateCompliment
 
 main :: IO ()
 main = do
-    hSetBuffering stdout NoBuffering
-
     initGUI
     window <- windowNew
     label <- labelNew (Just "Press the button to compliment")

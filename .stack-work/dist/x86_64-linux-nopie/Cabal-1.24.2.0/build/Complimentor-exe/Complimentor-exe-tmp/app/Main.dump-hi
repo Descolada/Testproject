@@ -1,13 +1,13 @@
 
 ==================== FINAL INTERFACE ====================
-2017-08-01 14:36:32.511667082 UTC
+2017-08-02 14:16:29.706469473 UTC
 
 interface main@main:Main 8002
-  interface hash: d6b4de499eec83523037921f5da955eb
-  ABI hash: 0108a2472539b055f81e2b30ea0ed07f
+  interface hash: f148b6a3da80d10eb5ebc53621340d57
+  ABI hash: 098567378673c3fc8f399cebe1223970
   export-list hash: e4c687c4f6dfe4978293b77a9232c8ed
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
-  flag hash: 16798eaf6c7afacb43f5b12557986709
+  flag hash: 57cd9cedf8d75ac0507197c7fac6c6df
   sig of: Nothing
   used TH splices: False
   where
@@ -77,9 +77,6 @@ import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
 import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
 import  -/  base-4.9.1.0:GHC.IO.Exception 5064be4c355632a1d1c4f2322f56ac52
-import  -/  base-4.9.1.0:GHC.IO.Handle ba98a5b34d78cbf48b41fe58a3735c69
-import  -/  base-4.9.1.0:GHC.IO.Handle.FD dbf0d0d4f42ab1465129a88ccf7880ff
-import  -/  base-4.9.1.0:GHC.IO.Handle.Types 17aa0e2ab137800e3a31992d780c071f
 import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
 import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
@@ -102,6 +99,7 @@ import  -/  gtk3-0.14.6@gtk3-0.14.6-GpOD8v3Tg84B0qrksI24sD:Graphics.UI.Gtk.Types
 import  -/  gtk3-0.14.6@gtk3-0.14.6-GpOD8v3Tg84B0qrksI24sD:Graphics.UI.Gtk.Windows.Window 6a4977b2163b613eacb0556a1fbf07e2
 import  -/  pango-0.13.3.1@pango-0.13.3.1-JzeirbCbfYGD1bBTv4WN1M:Graphics.Rendering.Pango.Structs ef96a8b0f016bf7598b6dcf2068d570c
 import  -/  random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog:System.Random 08e50ea8c400b4b56120dee22f012f01
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text e8aa34be3dde178f567ae461e65c988b
 776a0768355bb7fe4971cde7eed100bb
   $scontainerBorderWidth1 ::
     Graphics.UI.Gtk.Types.Window
@@ -176,7 +174,7 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-334833e88f59f7027a0973a09ad59614
+42550c21ef53885ee05eb2c78ee68562
   $wbuttonPress ::
     Graphics.UI.Gtk.Types.LabelClass l =>
     l
@@ -228,7 +226,7 @@ d6831ef04cb9301b090dfae6f7bb7ec7
                      `cast`
                    (<Foreign.C.String.CString>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
                    ipv }) -}
-d618713bb736fb75da7b8a56254c05a6
+bfa09988683d5880ae0bc65cdd2bb561
   buttonPress ::
     (Graphics.UI.Gtk.Types.ButtonClass o,
      Graphics.UI.Gtk.Types.LabelClass l) =>
@@ -244,7 +242,7 @@ d618713bb736fb75da7b8a56254c05a6
                  ->_R <o>_R
                  ->_R <l>_R
                  ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
-128ae27c892369378208cd00fd95e864
+46e1cdbdfcd729f8bb00d2e9ef5d16c1
   buttonPress1 ::
     (Graphics.UI.Gtk.Types.ButtonClass o,
      Graphics.UI.Gtk.Types.LabelClass l) =>
@@ -264,71 +262,27 @@ d618713bb736fb75da7b8a56254c05a6
                    (w3 :: l)
                    (w4 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Main.$wbuttonPress @ o @ l w1 w3 w4) -}
-a562869f6b101c2a29a0d57b2e24eb2d
+076262398cb016de11f3a856cf7e35ae
   buttonPress10 ::
-    GHC.Exception.SomeException
-    -> GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String #)
-  {- Arity: 2,
-     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
-                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
-                 case (GHC.Exception.$p1Exception @ e100 $dException1)
-                        `cast`
-                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
-                        (GHC.Prim.proxy#
-                           @ *
-                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
-                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
-                 case GHC.Prim.tagToEnum#
-                        @ GHC.Types.Bool
-                        (GHC.Prim.eqWord# dt dt2) of wild3 {
-                   GHC.Types.False
-                   -> GHC.Prim.raiseIO#
-                        @ GHC.Exception.SomeException
-                        @ (Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String)
-                        wild
-                        eta1
-                   GHC.Types.True
-                   -> case GHC.Prim.tagToEnum#
-                             @ GHC.Types.Bool
-                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
-                        GHC.Types.False
-                        -> GHC.Prim.raiseIO#
-                             @ GHC.Exception.SomeException
-                             @ (Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String)
-                             wild
-                             eta1
-                        GHC.Types.True
-                        -> (# eta1,
-                              Data.Either.Left
-                                @ GHC.IO.Exception.IOException
-                                @ GHC.Base.String
-                                e2
-                                  `cast`
-                                (UnsafeCo representational e100 GHC.IO.Exception.IOException) #) } } } } }) -}
-9c1262c41a4677240297c596685dfd14
-  buttonPress11 ::
     GHC.Types.IO
       (Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String)
   {- Unfolding: (GHC.Magic.lazy
                    @ (GHC.Types.IO
                         (Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String))
-                   Main.buttonPress12
+                   Main.buttonPress11
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <Data.Either.Either
                                 GHC.IO.Exception.IOException GHC.Base.String>_R))) -}
-e1461570dcf53f5d5042f2009133a3d9
-  buttonPress12 ::
+a3a21de379009884087b8acda9e40025
+  buttonPress11 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  case GHC.IO.Handle.FD.openFile1
-                        Main.buttonPress13
+                        Main.buttonPress12
                         GHC.IO.IOMode.ReadMode
                         s of ds1 { (#,#) ipv ipv1 ->
                  case GHC.IO.Handle.Text.hGetContents1
@@ -339,10 +293,11 @@ e1461570dcf53f5d5042f2009133a3d9
                       @ GHC.IO.Exception.IOException
                       @ GHC.Base.String
                       ipv3 #) } }) -}
-1224013ddfcaff90b121b3da569529d0
-  buttonPress13 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "compliments.txt"#) -}
-6370b1c6f0fbb57a2491b9fd0b073115
+39303449da4ff5e872e6b069d0dc9635
+  buttonPress12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "src/compliments.txt"#) -}
+f0c8b92514242ed8d48c46c08cf24244
   buttonPress2 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -351,27 +306,22 @@ e1461570dcf53f5d5042f2009133a3d9
                  case GHC.Prim.catch#
                         @ (Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String)
                         @ GHC.Exception.SomeException
-                        Main.buttonPress11
+                        Main.buttonPress10
                           `cast`
                         (GHC.Types.N:IO[0]
                              <Data.Either.Either
                                 GHC.IO.Exception.IOException GHC.Base.String>_R)
-                        Main.buttonPress10
+                        Main.buttonPress9
                         s of ds1 { (#,#) ipv ipv1 ->
                  case ipv1 of wild {
                    Data.Either.Left except
-                   -> case GHC.IO.Handle.Text.hPutStr2
-                             GHC.IO.Handle.FD.stdout
-                             Main.buttonPress9
-                             GHC.Types.True
-                             ipv of ds2 { (#,#) ipv2 ipv3 ->
-                      case GHC.Prim.raiseIO#
+                   -> case GHC.Prim.raiseIO#
                              @ GHC.Exception.SomeException
                              @ [GHC.Base.String]
                              Main.buttonPress6
-                             ipv2
+                             ipv
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
-                      of {} }
+                      of {}
                    Data.Either.Right contents
                    -> let {
                         comps :: [GHC.Base.String] = Data.OldList.lines contents
@@ -445,47 +395,91 @@ a4b23543858bddba69c861ac92478e85
 41bd597a8049544dce206ec09e1ad830
   buttonPress8 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1#) -}
-ffb160cd15887dad2a50b3e404507a08
-  buttonPress9 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString#
-                   "The compliments file was not found. Please install compliments.txt"#) -}
+8664a5d49d029df08058a4e638540805
+  buttonPress9 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ (Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String)
+                        wild
+                        eta1
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ (Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String)
+                             wild
+                             eta1
+                        GHC.Types.True
+                        -> (# eta1,
+                              Data.Either.Left
+                                @ GHC.IO.Exception.IOException
+                                @ GHC.Base.String
+                                e2
+                                  `cast`
+                                (UnsafeCo representational e100 GHC.IO.Exception.IOException) #) } } } } }) -}
 e85efb56f2abe4dc594a6bc86b3a082d
   buttonPress_w2 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (0) -}
-63ae40f9e8b42c7fd01a0d98e2af102c
+22752f699b7e3cbbef2e986a962254e2
   fileContents :: GHC.Types.IO [GHC.Base.String]
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.fileContents1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <[GHC.Base.String]>_R)) -}
-f63103843bc8c84466f45f43dbbff6ac
+cb24bf2067f9ee4dd9adece8bb0357fe
   fileContents1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Base.String] #)
   {- Arity: 1, Strictness: <S,U>,
-     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 case GHC.Prim.catch#
-                        @ (Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String)
-                        @ GHC.Exception.SomeException
-                        Main.buttonPress11
-                          `cast`
-                        (GHC.Types.N:IO[0]
-                             <Data.Either.Either
-                                GHC.IO.Exception.IOException GHC.Base.String>_R)
-                        Main.buttonPress10
-                        s of ds1 { (#,#) ipv ipv1 ->
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Main.fileContents2 s of ds1 { (#,#) ipv ipv1 ->
                  case ipv1 of wild {
-                   Data.Either.Left except
-                   -> case GHC.IO.Handle.Text.hPutStr2
-                             GHC.IO.Handle.FD.stdout
-                             Main.buttonPress9
-                             GHC.Types.True
-                             ipv of ds2 { (#,#) ipv2 ipv3 ->
-                      System.Exit.die2 @ [GHC.Base.String] ipv2 }
+                   Data.Either.Left except -> System.Exit.die2 @ [GHC.Base.String] ipv
                    Data.Either.Right contents
                    -> (# ipv, Data.OldList.lines contents #) } }) -}
-e1e1f88c8d030afed67f75c6b8590511
+04529ed44de529dda76067f0da670db8
+  fileContents2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ (Data.Either.Either GHC.IO.Exception.IOException GHC.Base.String)
+                   @ GHC.Exception.SomeException
+                   Main.buttonPress10
+                     `cast`
+                   (GHC.Types.N:IO[0]
+                        <Data.Either.Either
+                           GHC.IO.Exception.IOException GHC.Base.String>_R)
+                   Main.buttonPress9
+                   eta) -}
+d66d722ec212c35715a406ef47791018
   generateCompliment :: GHC.Types.IO GHC.Base.String
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
